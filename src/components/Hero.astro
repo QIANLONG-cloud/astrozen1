@@ -4,9 +4,8 @@ type Props = HeroProps;
 
 const { name, specialty, summary, email } = Astro.props;
 
-const emailSubject = encodeURIComponent("欢迎消息 — 刘钱龙");
-const emailBody = encodeURIComponent(
-  "大家好，我是 " + name + "，
+const emailSubject = "欢迎消息 — 刘钱龙";
+const emailBody = `大家好，我是 ${name}，
 
 我们可以讨论以下业务：
 
@@ -14,10 +13,8 @@ const emailBody = encodeURIComponent(
 • 商业合作方式和期望
 • 其他问题
 
-感谢您的时间！
-"
-);
-const mailtoHref = `mailto:${email}?subject=${emailSubject}&body=${emailBody}`;
+感谢您的时间！`;
+const mailtoHref = `mailto:${email}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
 ---
 
 <section class="py-24 md:py-32" id="#hero">
