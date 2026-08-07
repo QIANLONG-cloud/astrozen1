@@ -3,6 +3,21 @@ import type { HeroProps } from "@types";
 type Props = HeroProps;
 
 const { name, specialty, summary, email } = Astro.props;
+
+const emailSubject = encodeURIComponent("欢迎消息 — 刘钱龙");
+const emailBody = encodeURIComponent(
+  "大家好，我是 " + name + "，
+
+我们可以讨论以下业务：
+
+• 项目接触 / 会计明目的
+• 商业合作方式和期望
+• 其他问题
+
+感谢您的时间！
+"
+);
+const mailtoHref = `mailto:${email}?subject=${emailSubject}&body=${emailBody}`;
 ---
 
 <section class="py-24 md:py-32" id="#hero">
@@ -22,6 +37,6 @@ const { name, specialty, summary, email } = Astro.props;
 
   <a
     class="inline-block rounded-full bg-primary px-8 py-5 text-sm leading-5 font-medium text-[#fff]"
-    href={`mailto:${email}`}>Get in Touch</a
+    href={mailtoHref}>Get in Touch</a
   >
 </section>
