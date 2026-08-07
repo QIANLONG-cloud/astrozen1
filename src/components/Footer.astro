@@ -14,52 +14,30 @@ const wechat = "oranngeii";
 <footer class="w-full border-t border-neutral/20 px-5 pt-16 pb-10 text-center text-white">
   <div class="mx-auto grid max-w-3xl grid-cols-1 gap-6 md:grid-cols-3">
     <!-- 邮箱 -->
-    <div class="group relative cursor-pointer rounded-2xl border border-neutral/20 bg-white/5 p-6 text-left transition hover:border-blue-400/60 hover:bg-white/10">
+    <div class="rounded-2xl border border-neutral/20 bg-white/5 p-6 text-left">
       <div class="mb-3 flex items-center gap-2">
         <span class="text-blue-400">✉</span>
         <span class="text-xs font-medium tracking-wide text-blue-400">邮箱</span>
       </div>
       <div class="break-all text-lg font-medium text-white">{email}</div>
-      <a
-        href={`mailto:${email}?subject=${encodeURIComponent("欢迎消息 — 刘钱龙")}&body=${encodeURIComponent("大家好，我是刘钱龙，\n\n我可以为您提供：\n\n• 项目质量策划与管控（DQE / QPM）\n• 研发质量流程建设（DFMEA / APQP / CTQ）\n• 质量数据平台与工具开发\n• 其他质量咨询\n\n联系方式：\n- 邮箱：875348468@qq.com\n- 电话：193 1143 2894\n- 微信：oranngeii（见下方卡片）\n\n期待与您合作！")}`}
-        class="absolute inset-0 z-10"
-        aria-label="发送邮件"
-      ></a>
-      <div class="pointer-events-none absolute bottom-full left-1/2 mb-3 -translate-x-1/2 scale-90 rounded-xl bg-white p-3 opacity-0 shadow-2xl transition-all duration-300 group-hover:scale-100 group-hover:opacity-100">
-        <img src="/qr-email.jpg" class="h-40 w-40" alt="Email QR" />
-        <p class="mt-2 text-center text-xs text-black">扫码发邮件</p>
-      </div>
     </div>
 
     <!-- 电话 -->
-    <div class="group relative cursor-pointer rounded-2xl border border-neutral/20 bg-white/5 p-6 text-left transition hover:border-blue-400/60 hover:bg-white/10">
+    <div class="rounded-2xl border border-neutral/20 bg-white/5 p-6 text-left">
       <div class="mb-3 flex items-center gap-2">
         <span class="text-blue-400">☏</span>
         <span class="text-xs font-medium tracking-wide text-blue-400">电话</span>
       </div>
       <div class="text-lg font-medium text-white">{phone}</div>
-      <a
-        href={`tel:${phone}`}
-        class="absolute inset-0 z-10"
-        aria-label="拨打电话"
-      ></a>
-      <div class="pointer-events-none absolute bottom-full left-1/2 mb-3 -translate-x-1/2 scale-90 rounded-xl bg-white p-3 opacity-0 shadow-2xl transition-all duration-300 group-hover:scale-100 group-hover:opacity-100">
-        <img src="/qr-phone.jpg" class="h-40 w-40" alt="Phone QR" />
-        <p class="mt-2 text-center text-xs text-black">扫码拨号</p>
-      </div>
     </div>
 
     <!-- 微信 -->
-    <div class="group relative cursor-pointer rounded-2xl border border-neutral/20 bg-white/5 p-6 text-left transition hover:border-blue-400/60 hover:bg-white/10">
+    <div class="rounded-2xl border border-neutral/20 bg-white/5 p-6 text-left">
       <div class="mb-3 flex items-center gap-2">
         <span class="text-blue-400">✦</span>
         <span class="text-xs font-medium tracking-wide text-blue-400">微信</span>
       </div>
       <div class="text-lg font-medium text-white">{wechat}</div>
-      <div class="pointer-events-none absolute bottom-full left-1/2 mb-3 -translate-x-1/2 scale-90 rounded-xl bg-white p-3 opacity-0 shadow-2xl transition-all duration-300 group-hover:scale-100 group-hover:opacity-100">
-        <img src="/qr-wechat.jpg" class="h-40 w-40" alt="WeChat QR" />
-        <p class="mt-2 text-center text-xs text-black">扫码加微信</p>
-      </div>
     </div>
   </div>
 
