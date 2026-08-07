@@ -6,7 +6,7 @@ export const SITE_CONFIG: SiteConfig = {
   description:
     "10 年质量工程经验 · 具身智能 DQE/QPL · 跨精密模具 / 3C / 智能装备 / 具身智能 4 行业",
   lang: "zh-CN",
-  siteLogo: "/alejandro-small.jpg",
+  siteLogo: "/about.jpg",
   navLinks: [
     { text: "经历", href: "#experience" },
     { text: "项目", href: "#projects" },
@@ -83,7 +83,7 @@ export const SITE_CONTENT: SiteContent = {
         "具身智能核心产品。主导 1 代、2 代灵巧手从设计到量产全流程质量策划、DFMEA 评审、CTQ 识别与 BUG/风险闭环。累计推动 800+ BUG、100+ 风险闭环。",
       linkPreview: "/",
       linkSource: "https://www.wuji.tech/",
-      image: "/wuji-hand.png",
+      image: "/about.jpg",
     },
     {
       name: "无框力矩电机 G/F 系列",
@@ -91,7 +91,7 @@ export const SITE_CONTENT: SiteContent = {
         "机器人关节核心零部件。负责供应商、来料、制程、成品、售后全链路质量管理，主导 APQP 与 PPAP 审核，确保量产稳定性。",
       linkPreview: "/",
       linkSource: "",
-      image: "/motor.png",
+      image: "/about.jpg",
     },
     {
       name: "空气悬浮 & 磁悬浮风机",
@@ -99,7 +99,7 @@ export const SITE_CONTENT: SiteContent = {
         "智能装备产品线。统筹产品质量管控，覆盖供应商评审、来料检验、制程监控、出货审核与售后改善闭环。",
       linkPreview: "/",
       linkSource: "",
-      image: "/fan.png",
+      image: "/about.jpg",
     },
     {
       name: "Apple iMac NPI（EVT/DVT/PVT）",
@@ -107,11 +107,11 @@ export const SITE_CONTENT: SiteContent = {
         "Apple 客户产品尺寸工程。完成 EVT/DVT/PVT 全阶段尺寸验证，建立 CMM/OMM 标准化测量程序与 MSOP/SIP 检验规范，支撑新产品顺利导入量产。",
       linkPreview: "/",
       linkSource: "",
-      image: "/imac.png",
+      image: "/about.jpg",
     },
   ],
-  about: {
-    description: "你好，我是刘钱龙，10 年质量工程经验，现任深圳舞肌科技 DQE / 项目质量负责人（QPL），主导 Wuji Hand 灵巧手 1 代、2 代产品研发项目质量管理。\n\n我的职业生涯起步于赫比（精密模具），历经富士康（Apple iMac NPI 测量）、雷茨智能（无框力矩电机 / 风机）、到现在的舞肌科技（具身智能灵巧手），覆盖精密模具 / 3C 制造 / 智能装备 / 具身智能 4 个行业。每个阶段都让我对全流程质量管理有更深的理解。\n\n兼具质量工程深度与数字化平台建设能力。我独立开发并维护质量数据平台与测试空间，打通飞书项目、Meego、Jira 等多数据源，实现质量数据自动采集、分析、预警及可视化，推动质量管理数字化建设。累计推动 800+ BUG、100+ 风险闭环。\n\n求职意向：质量经理 / QPM / DQE。期望城市：深圳。",
-    image: "/alejandro-big.jpg",
+  "about": {
+    description: \"你好，我是刘钱龙，10 年质量工程经验，现任深圳舞肌科技 DQE / 项目质量负责人（QPL），主导 Wuji Hand 灵巧手 1 代、2 代产品研发项目质量管理。我的职业生涯起步于赫比（精密模具），历经富士康（Apple iMac NPI 测量）、雷茨智能（无框力矩电机 / 风机）、到现在的舞肌科技（具身智能灵巧手），覆盖精密模具 / 3C 制造 / 智能装备 / 具身智能 4 个行业。兼具质量工程深度与数字化平台建设能力。累计推动 800+ BUG、100+ 风险闭环。求职意向：质量经理 / QPM / DQE，期望城市：深圳。\",
+    image: \"/about.jpg\",
   },
 };
