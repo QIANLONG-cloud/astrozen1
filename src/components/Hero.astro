@@ -2,26 +2,7 @@
 import type { HeroProps } from "@types";
 type Props = HeroProps;
 
-const { name, specialty, summary, email } = Astro.props;
-const phone = "19311432894";
-
-const emailSubject = "欢迎消息 — 刘钱龙";
-const emailBody = `大家好，我是 ${name}，
-
-我可以为您提供：
-
-• 项目质量策划与管控（DQE / QPM）
-• 研发质量流程建设（DFMEA / APQP / CTQ）
-• 质量数据平台与工具开发
-• 其他质量咨询
-
-联系方式：
-- 邮箱：${email}
-- 电话：${phone}
-- 微信：扫码添加（见下方卡片）
-
-期待与您合作！`;
-const mailtoHref = `mailto:${email}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+const { name, specialty, summary } = Astro.props;
 ---
 
 <section class="py-24 md:py-32" id="#hero">
@@ -38,9 +19,4 @@ const mailtoHref = `mailto:${email}?subject=${encodeURIComponent(emailSubject)}&
   <p class="mb-16 text-base font-normal text-neutral md:text-lg">
     {summary}
   </p>
-
-  <a
-    class="inline-block rounded-full bg-primary px-8 py-5 text-sm leading-5 font-medium text-[#fff]"
-    href={mailtoHref}>Get in Touch</a
-  >
 </section>
