@@ -83,7 +83,7 @@ export const SITE_CONTENT: SiteContent = {
         "具身智能核心产品。主导 1 代、2 代灵巧手从设计到量产全流程质量策划、DFMEA 评审、CTQ 识别与 BUG/风险闭环。累计推动 800+ BUG、100+ 风险闭环。",
       linkPreview: "/",
       linkSource: "https://www.wuji.tech/",
-      image: "/about.jpg",
+      /wuji-hand.jpg,
     },
     {
       name: "无框力矩电机 G/F 系列",
@@ -91,7 +91,7 @@ export const SITE_CONTENT: SiteContent = {
         "机器人关节核心零部件。负责供应商、来料、制程、成品、售后全链路质量管理，主导 APQP 与 PPAP 审核，确保量产稳定性。",
       linkPreview: "/",
       linkSource: "",
-      image: "/about.jpg",
+      /motor.jpg,
     },
     {
       name: "空气悬浮 & 磁悬浮风机",
@@ -99,7 +99,7 @@ export const SITE_CONTENT: SiteContent = {
         "智能装备产品线。统筹产品质量管控，覆盖供应商评审、来料检验、制程监控、出货审核与售后改善闭环。",
       linkPreview: "/",
       linkSource: "",
-      image: "/about.jpg",
+      /fan.jpg,
     },
     {
       name: "Apple iMac NPI（EVT/DVT/PVT）",
@@ -107,7 +107,7 @@ export const SITE_CONTENT: SiteContent = {
         "Apple 客户产品尺寸工程。完成 EVT/DVT/PVT 全阶段尺寸验证，建立 CMM/OMM 标准化测量程序与 MSOP/SIP 检验规范，支撑新产品顺利导入量产。",
       linkPreview: "/",
       linkSource: "",
-      image: "/about.jpg",
+      /imac.jpg,
     },
   ],
   "about": {
