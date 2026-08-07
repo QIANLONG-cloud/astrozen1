@@ -1,31 +1,65 @@
 ---
 import type { SiteConfig } from "@types";
 
-type Props = Pick<SiteConfig, "author" | "socialLinks">;
+type Props = Pick<SiteConfig, "author">;
 
-const { author, socialLinks } = Astro.props;
+const { author } = Astro.props;
 const currentYear = new Date().getFullYear();
+
+const email = "875348468@qq.com";
+const phone = "19311432894";
 ---
 
-<footer
-  class="w-full border-t border-neutral/20 px-5 pt-5 pb-8 text-center text-white"
->
-  <ul class="mb-5 flex flex-wrap justify-center gap-x-5 text-xs">
-    {
-      socialLinks.map(({ text, href }) => (
-        <li>
-          <a
-            href={href}
-            target="_blank"
-            class="inline-block px-4 py-3 after:relative after:-bottom-1 after:content-[url(/external.svg)] hover:text-primary"
-          >
-            {text}
-          </a>
-        </li>
-      ))
-    }
-  </ul>
-  <p class="text-xs">
+<footer class="w-full border-t border-neutral/20 px-5 pt-16 pb-10 text-center text-white">
+  <h3 class="mb-2 font-serif text-2xl font-medium">联系方式</h3>
+  <p class="mb-10 text-sm text-neutral">点击或扫码 · 24 小时内回复</p>
+
+  <div class="mx-auto grid max-w-3xl grid-cols-1 gap-6 md:grid-cols-3">
+    <!-- 邮箱 -->
+    <div class="group relative rounded-2xl border border-neutral/20 bg-white/5 p-6 transition hover:border-white/40 hover:bg-white/10">
+      <div class="mb-3 text-3xl">✉️</div>
+      <h4 class="mb-1 text-base font-medium text-white">邮箱</h4>
+      <p class="text-xs text-neutral">{email}</p>
+      <a
+        href={`mailto:${email}?subject=${encodeURIComponent("欢迎消息 — 刘钱龙")}&body=${encodeURIComponent("大家好，我是刘钱龙，\n\n我可以为您提供：\n\n• 项目质量策划与管控（DQE / QPM）\n• 研发质量流程建设（DFMEA / APQP / CTQ）\n• 质量数据平台与工具开发\n• 其他质量咨询\n\n联系方式：\n- 邮箱：875348468@qq.com\n- 电话：193 1143 2894\n- 微信：扫码添加（见下方卡片）\n\n期待与您合作！")}`}
+        class="absolute inset-0 z-10"
+        aria-label="发送邮件"
+      ></a>
+      <div class="pointer-events-none absolute bottom-full left-1/2 mb-3 -translate-x-1/2 scale-90 rounded-xl bg-white p-3 opacity-0 shadow-2xl transition-all duration-300 group-hover:scale-100 group-hover:opacity-100">
+        <img src="/qr-email.jpg" class="h-40 w-40" alt="Email QR" />
+        <p class="mt-2 text-center text-xs text-black">扫码发邮件</p>
+      </div>
+    </div>
+
+    <!-- 电话 -->
+    <div class="group relative rounded-2xl border border-neutral/20 bg-white/5 p-6 transition hover:border-white/40 hover:bg-white/10">
+      <div class="mb-3 text-3xl">📞</div>
+      <h4 class="mb-1 text-base font-medium text-white">电话</h4>
+      <p class="text-xs text-neutral">193 1143 2894</p>
+      <a
+        href={`tel:${phone}`}
+        class="absolute inset-0 z-10"
+        aria-label="拨打电话"
+      ></a>
+      <div class="pointer-events-none absolute bottom-full left-1/2 mb-3 -translate-x-1/2 scale-90 rounded-xl bg-white p-3 opacity-0 shadow-2xl transition-all duration-300 group-hover:scale-100 group-hover:opacity-100">
+        <img src="/qr-phone.jpg" class="h-40 w-40" alt="Phone QR" />
+        <p class="mt-2 text-center text-xs text-black">扫码拨号</p>
+      </div>
+    </div>
+
+    <!-- 微信 -->
+    <div class="group relative rounded-2xl border border-neutral/20 bg-white/5 p-6 transition hover:border-white/40 hover:bg-white/10">
+      <div class="mb-3 text-3xl">💬</div>
+      <h4 class="mb-1 text-base font-medium text-white">微信</h4>
+      <p class="text-xs text-neutral">扫码添加</p>
+      <div class="pointer-events-none absolute bottom-full left-1/2 mb-3 -translate-x-1/2 scale-90 rounded-xl bg-white p-3 opacity-0 shadow-2xl transition-all duration-300 group-hover:scale-100 group-hover:opacity-100">
+        <img src="/qr-wechat.jpg" class="h-40 w-40" alt="WeChat QR" />
+        <p class="mt-2 text-center text-xs text-black">待填入微信号</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="mt-16 text-xs text-neutral">
     {author} © {currentYear}.
   </p>
 </footer>
