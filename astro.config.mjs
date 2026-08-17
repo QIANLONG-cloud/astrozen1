@@ -5,6 +5,8 @@ import { fontProviders } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://qianlong-cloud.github.io",
+  base: "/astrozen1/",
   fonts: [
     {
       provider: fontProviders.fontsource(),
