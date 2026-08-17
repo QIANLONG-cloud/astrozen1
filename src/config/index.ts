@@ -18,7 +18,7 @@ export const SITE_CONFIG: SiteConfig = {
     { text: "微信", href: "tel:19311432894" },
   ],
   socialImage: "/zen-og.png",
-  canonicalURL: "https://astrozen1-two.vercel.app",
+  canonicalURL: "https://qianlong-cloud.github.io/astrozen1",
 };
 
 export const SITE_CONTENT: SiteContent = {
